@@ -16,7 +16,6 @@ public class Servico {
     private int duracaoEmMinutos;
 
     @ManyToOne
-    @Column(name = "usuario_id")
     @JoinColumn(name = "usuario_id")
-    private Usuario usuarioId;
+    private Usuario usuario;
 }
